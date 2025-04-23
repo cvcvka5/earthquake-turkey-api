@@ -45,16 +45,16 @@ This API provides real-time earthquake data fetched from the Kandilli Observator
 - **Endpoint**: `/at`
 - **Method**: `GET`
 - **Query Parameters**:
-  - `date`: The date to filter by (e.g., `2025.04.22`).
-  - `time`: The time to filter by (e.g., `19:56:02`).
+  - `date`: The date to filter by (e.g., `2025.04.22`, `2025`).
+  - `time`: The time to filter by (e.g., `19:56:02`, `19`).
 - **Description**: Filters earthquake data based on the provided date and time.
 
 ### 3. Get Earthquake Data by Proximity
 - **Endpoint**: `/near`
 - **Method**: `GET`
 - **Query Parameters**:
-  - `latitude`: Latitude for proximity search (e.g., `38.2187`).
-  - `longitude`: Longitude for proximity search (e.g., `44.0542`).
+  - `latitude`: Latitude for proximity search (e.g., `38.2187`, `38`).
+  - `longitude`: Longitude for proximity search (e.g., `44.0542`, `44`).
   - `radius`: Search radius in kilometers (optional).
 - **Description**: Filters earthquake data based on proximity to the provided latitude and longitude.
 
@@ -76,8 +76,8 @@ This API provides real-time earthquake data fetched from the Kandilli Observator
 - **Endpoint**: `/filter`
 - **Method**: `GET`
 - **Query Parameters**:
-  - `date`: Filter by date (e.g., `2025.04.22`).
-  - `time`: Filter by time (e.g., `19:56:02`).
+  - `date`: Filter by date.
+  - `time`: Filter by time.
   - `latitude`: Filter by latitude.
   - `longitude`: Filter by longitude.
   - `depth`: Filter by depth.
